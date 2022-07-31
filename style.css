@@ -665,6 +665,9 @@ footer {
     .modal__half {
         width: 100%;
     }
+    .shape {
+        display: none;
+    }
 }
 
 /* Smaller */
