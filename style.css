@@ -62,7 +62,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-    border-color: #f06449;
+    border-color: #5BBA6F;
 }
 
 .container {
@@ -98,7 +98,7 @@ input:focus, textarea:focus {
 }
 
 .orange {
-    color: #f06449 !important;
+    color: #5BBA6F !important;
 }
 
 .link__hover-effect {
@@ -204,7 +204,7 @@ header {
 }
 
 .social__link {
-    background-color: #f06449;
+    background-color: #5BBA6F;
     color: white;
     padding: 6px;
     width: 32px;
@@ -408,8 +408,8 @@ nav {
 }
 
 .form__submit {
-    background-color: #f06449;
-    border: 2px solid #f06449;
+    background-color: #5BBA6F;
+    border: 2px solid #5BBA6F;
     color: white;
     font-weight: bold;
     width: 100%;
@@ -425,8 +425,8 @@ nav {
 }
 
 .form__submit:active {
-    border-color: #f06449;
-    color: #f06449;
+    border-color: #5BBA6F;
+    color: #5BBA6F;
 }
 
 .modal__overlay {
