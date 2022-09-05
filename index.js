@@ -1,5 +1,5 @@
 let isModalOpen = false;
-let contrastToggle = false;
+let contrastToggle = true;
 const scaleFactor = 1 / 20;
 
 function moveBackground(event) {
@@ -19,9 +19,13 @@ function toggleContrast() {
 
     if (contrastToggle) {
         document.body.classList += " dark-theme"
+        document.getElementById("light-icon").style.display = "none";
+        document.getElementById("dark-icon").style.display = "block";
     }
     else {
         document.body.classList.remove("dark-theme")
+        document.getElementById("light-icon").style.display = "block";
+        document.getElementById("dark-icon").style.display = "none";
     }
 }
 

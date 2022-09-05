@@ -22,7 +22,7 @@
     </script>
 </head>
 
-<body>
+<body class="dark-theme">
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
@@ -55,7 +55,12 @@
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    "><i class="fa-solid fa-circle-half-stroke" onclick="toggleContrast()"></i></a>
+                    " id="dark-icon"><i class="fa-solid fa-moon" onclick="toggleContrast()"></i></a>
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    " id="light-icon" style="display: none;"><i class="fa-solid fa-sun" onclick="toggleContrast()"></i></a>
                 </li>
             </ul>
         </nav>
@@ -194,83 +199,24 @@
                 <ul class="projects__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/fujj-mockup.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Car Sales Project
+                                    Stripe E-Commerce Website
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, Vue, VueX
+                                    HTML, CSS, JavaScript, Node.JS, Stripe
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque
-                                    sed odio eget, luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum
-                                    dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend libero. In hac
-                                    habitasse platea dictumst.
+                                    Fujj is an online store selling fudge bars. I created a multi-page website for them with a products page, pulling items from a JavaScript file, and a fully mobile-responsive landing and FAQs page. I also implemented Stripe payments with a Node JS express server as the backend to the project.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
+                                    <a href="https://fujjwebsite.vercel.app/" class="project__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, Vue, VueX
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque
-                                    sed odio eget, luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum
-                                    dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend libero. In hac
-                                    habitasse platea dictumst.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
+                                    <a href="https://github.com/ThomasJPrice/fujjwebsite" class="project__description--link">
                                         <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, Vue, VueX
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque
-                                    sed odio eget, luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum
-                                    dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend libero. In hac
-                                    habitasse platea dictumst.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
-                                        <i class="fas fa-link"></i>
                                     </a>
                                 </div>
                             </div>

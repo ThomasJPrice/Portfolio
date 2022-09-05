@@ -491,10 +491,11 @@ nav {
 }
 
 .project {
-    margin-bottom: 135px;
+    margin-bottom: 50px;
 }
 
 .project__img {
+    padding: 30px 0;
     width: 100%;
     transition: all 600ms ease;
 }
