@@ -8,7 +8,6 @@
     <title>Thomas Price</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/ceb36731d2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
@@ -20,6 +19,19 @@
         (function () {
             emailjs.init("BCK6ynfq2y7qWWEXm");
         })();
+    </script>
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+                    MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init('847cd13d80894adf8a3d5555afbe04dc', { debug: true });
+        mixpanel.track('Home');
     </script>
 </head>
 
@@ -297,30 +309,46 @@
                 <h1 class="section__title">
                     What do <span class="orange">clients</span> say
                 </h1>
-                <ul class="testimonial-list">
-                    <l1 class="testimonial" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                    data-aos-once="true">
-                        <div class="testimonial-content">
-                            <i class="fa-solid fa-quote-left"></i>
-                            <p class="testimonial-text">
-                                Thomas was recommended to us, we had a website but didn't have the time or knowledge to get
-                                it
-                                looking it's best.
-                                Thomas gave a few options on how to move forward. We asked him to <span class='green-testimonial'>design</span> the whole website
-                                for
-                                us and it looks <span class='green-testimonial'>amazing!</span> Just how we wanted it to look and more.
-                                Thomas understood our vision and added little extras which makes the website look very
-                                <span class='green-testimonial'>professional!</span> We've had many compliments since it was launched last week.
+                <div class="carousel-wrapper" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <i class="fa-solid fa-arrow-left desktop-arrow-left" id="prev"></i>
+                    <ul class="testimonial-list">
+                        <l1 class="testimonial">
+                            <div class="testimonial-content">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p class="testimonial-text">
+                                    Thomas was recommended to us, we had a website but didn't have the time or knowledge
+                                    to get
+                                    it
+                                    looking it's best.
+                                    Thomas gave a few options on how to move forward. We asked him to <span
+                                        class='green-testimonial'>design</span> the whole website
+                                    for
+                                    us and it looks <span class='green-testimonial'>amazing!</span> Just how we wanted
+                                    it to look and more.
+                                    Thomas understood our vision and added little extras which makes the website look
+                                    very
+                                    <span class='green-testimonial'>professional!</span> We've had many compliments
+                                    since it was launched last week.
 
-                                Thomas was very professional in his <span class='green-testimonial'>communication</span> and advice. Would highly recommend Thomas
-                                if
-                                you need your website designing!
-                            </p>
-                            <i class="fa-solid fa-quote-right"></i>
-                        </div>
-                        <a class="testimonial-from" href="https://thomaspropertymanagement.co.uk/" target="_blank">Thomas Properties</a>
-                    </l1>
-                </ul>
+                                    Thomas was very professional in his <span
+                                        class='green-testimonial'>communication</span> and advice. Would highly
+                                    recommend Thomas
+                                    if
+                                    you need your website designing!
+                                </p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <a class="testimonial-from" href="https://thomaspropertymanagement.co.uk/"
+                                target="_blank">Thomas Properties</a>
+                        </l1>
+                    </ul>
+                    <i class="fa-solid fa-arrow-right desktop-arrow-right" id="next"></i>
+                    <div class="mobile-arrows">
+                        <i class="fa-solid fa-arrow-left mobile-arrow-left" id="mobile-prev"></i>
+                        <i class="fa-solid fa-arrow-right mobile-arrow-right" id="mobile-next"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -356,6 +384,38 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script src="index.js"></script>
+    <script>
+        // DESKTOP
+        const slidesContainer = document.getElementsByClassName("testimonial-list")[0];
+        const slide = document.querySelector(".testimonial");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+
+        nextButton.addEventListener("click", () => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft += slideWidth;
+        });
+
+        prevButton.addEventListener("click", () => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft -= slideWidth;
+        });
+
+        // MOBILE
+        const mobilePrevButton = document.getElementById("mobile-prev");
+        const mobileNextButton = document.getElementById("mobile-next");
+
+        mobileNextButton.addEventListener("click", () => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft += slideWidth;
+        });
+
+        mobilePrevButton.addEventListener("click", () => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft -= slideWidth;
+        });
     </script>
 </body>
 
