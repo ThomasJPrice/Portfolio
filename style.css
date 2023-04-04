@@ -657,7 +657,7 @@ nav {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 .desktop-arrow-left {

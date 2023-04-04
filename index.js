@@ -62,20 +62,3 @@ function toggleModal() {
     isModalOpen = true;
     document.body.classList += " modal--open"
 }
-
-// TESTIMONIAL CAROUSEL
-
-// let nextButton = document.getElementById('next')
-// console.log(nextButton);
-
-
-
-// nextButton.addEventListener("click", (event) => {
-//     const slideWidth = slide.clientWidth;
-//     slidesContainer.scrollLeft += slideWidth;
-// });
-
-// prevButton.addEventListener("click", () => {
-//     const slideWidth = slide.clientWidth;
-//     slidesContainer.scrollLeft -= slideWidth;
-// });

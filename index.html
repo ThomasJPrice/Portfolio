@@ -30,7 +30,7 @@
                     MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
             }
         })(document, window.mixpanel || []);
-        mixpanel.init('847cd13d80894adf8a3d5555afbe04dc', { debug: true });
+        mixpanel.init('847cd13d80894adf8a3d5555afbe04dc', { debug: false });
         mixpanel.track('Home');
     </script>
 </head>
@@ -136,10 +136,6 @@
                     <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/technologies/stripe.png" alt="">
                         <span class="language__name">Stripe</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/technologies/nodejs.png" alt="">
-                        <span class="language__name">Node.JS</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/technologies/react.png" alt="">
@@ -273,27 +269,23 @@
                     <li class="project" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-once="true">
                         <div class="project__wrapper">
-                            <img src="./assets/mockups/brands-mockup.png" class="project__img" alt="">
+                            <img src="./assets/mockups/houseofhandsome-mockup.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Brands Landing Pages
+                                    House of Handsome
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript
+                                    React JS, JavaScript, Tailwind CSS, Sanity CMS
                                 </h4>
                                 <p class="project__description--para">
-                                    I redesigned famous brands landing pages in a responsive, more modern way. They each
-                                    have a JS component, such as a product slider, or background colour changer.
+                                    House of Handsome asked me to create a website for them from scratch. Keeping inline
+                                    with their quirky and unique brand, I designed and built a creative site. The client can also fully edit all the content easily using Sanity as a Headless CMS.
                                 </p>
                                 <div class="project__description--links">
-                                    <a target="_blank" href="http://thomasprice.me/brands-landing-pages/"
+                                    <a target="_blank" href="https://houseofhandsomebedford.co.uk/"
                                         class="project__description--link">
                                         <i class="fas fa-link"></i>
-                                    </a>
-                                    <a target="_blank" href="https://github.com/ThomasJPrice/brands-landing-pages"
-                                        class="project__description--link">
-                                        <i class="fa-brands fa-github"></i>
                                     </a>
                                 </div>
                             </div>
@@ -313,6 +305,8 @@
                     data-aos-easing="ease-in-out" data-aos-once="true">
                     <i class="fa-solid fa-arrow-left desktop-arrow-left" id="prev"></i>
                     <ul class="testimonial-list">
+
+                        <!-- THOMAS PROPERTIES TESTIMONIAL -->
                         <l1 class="testimonial">
                             <div class="testimonial-content">
                                 <i class="fa-solid fa-quote-left"></i>
@@ -342,12 +336,33 @@
                             <a class="testimonial-from" href="https://thomaspropertymanagement.co.uk/"
                                 target="_blank">Thomas Properties</a>
                         </l1>
-                    </ul>
-                    <i class="fa-solid fa-arrow-right desktop-arrow-right" id="next"></i>
-                    <div class="mobile-arrows">
-                        <i class="fa-solid fa-arrow-left mobile-arrow-left" id="mobile-prev"></i>
-                        <i class="fa-solid fa-arrow-right mobile-arrow-right" id="mobile-next"></i>
-                    </div>
+
+                        <!-- THOMAS PROPERTIES TESTIMONIAL -->
+                        <l1 class="testimonial">
+                            <div class="testimonial-content">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p class="testimonial-text">
+                                    Thomas has been amazing at creating the website for me <span
+                                        class='green-testimonial'>from scratch </span>listened to what
+                                    I had asked for and was happy to add/change things for me and help me know what to
+                                    do when it came to it!
+                                    <span class='green-testimonial'>Very helpful </span>and great at what he does
+                                    <span class='green-testimonial'>Highly recommend</span>
+                                </p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <a class="testimonial-from" href="https://houseofhandsomebedford.co.uk/"
+                                target="_blank">House Of Handsome</a>
+                        </l1>
+
+
+                        <!-- BASE SLIDER STUFF -->
+                        <i class="fa-solid fa-arrow-right desktop-arrow-right" id="next"></i>
+
+                </div>
+                <div class="mobile-arrows">
+                    <i class="fa-solid fa-arrow-left mobile-arrow-left" id="mobile-prev"></i>
+                    <i class="fa-solid fa-arrow-right mobile-arrow-right" id="mobile-next"></i>
                 </div>
             </div>
         </div>
@@ -396,11 +411,13 @@
         nextButton.addEventListener("click", () => {
             const slideWidth = slide.clientWidth;
             slidesContainer.scrollLeft += slideWidth;
+            console.log('next');
         });
 
         prevButton.addEventListener("click", () => {
             const slideWidth = slide.clientWidth;
             slidesContainer.scrollLeft -= slideWidth;
+            console.log('prev');
         });
 
         // MOBILE
